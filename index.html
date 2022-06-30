@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eclipse App</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="indexPage">
+        <table id="test" cellspacing="0" class="fullpage">
+            <tr>
+                <td>
+                    <button class="fullpage" id="selectionButton">Start Selection</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="selectionPage">
+        <table cellspacing="0" class="fullpage">
+            <tr>
+                <td><button id="b1">1</button></td>
+                <td><button id="b2">2</button></td>
+            </tr>
+            <tr>
+                <td><button id="b3">3</button></td>
+                <td><button id="b4">4</button></td>
+            </tr>
+            <tr>
+                <td><button id="b5">5</button></td>
+                <td><button id="b6">6</button></td>
+            </tr>
+            <tr>
+                <td colspan="2" id="lowertd"><button id="b7">START</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="turnPage">
+        <table id="test" cellspacing="0" class="fullpage">
+            <tr style="height: 25%;">
+                <td class="nextTurns" id="nextTurn1"></td>
+                <td class="nextTurns" id="nextTurn2"></td>
+                <td class="nextTurns" id="nextTurn3"></td>
+                <td class="nextTurns" id="nextTurn4"></td>
+                <td class="nextTurns" id="nextTurn5"></td>
+                <td id="turnCounter">N</td>
+            </tr>
+            <tr style="height: 50%;">
+                <td colspan="6">
+                    <button id="turnButton">WHAT</button>
+                </td>
+            </tr>
+            <tr style="height: 25%;">
+                <td colspan="6">
+                    <button id="skipButton">SKIP</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="nextTurnPage" class="fullpage">
+        <button class="fullpage" style="background-color: orange; font-size: 30vmin;" id="nextTurnPageButton"></button>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
