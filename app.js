@@ -122,9 +122,15 @@ function updateQueueColors() {
   for (i = 1; i < queue.length; i++) {
     document.getElementById("nextTurn" + i).style.backgroundColor =
       colors[queue[i]];
+    if (skipOrder.includes(queue[i])) {
+      document.getElementById("nextTurn" + i).textContent =
+        skipOrder.indexOf(queue[i]) + 1;
+    } else {
+      document.getElementById("nextTurn" + i).textContent = "";
+    }
   }
   if (skipOrder.includes(queue[0])) {
-    document.getElementById("turnButton").textContent = "SKIPPED";
+    document.getElementById("turnButton").textContent = "PASSED";
   } else {
     document.getElementById("turnButton").textContent = "";
   }

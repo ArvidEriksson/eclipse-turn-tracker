@@ -3,6 +3,8 @@
     padding: 0%;
     margin: 0%;
     border: 0cm;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: rgb(39, 39, 39);
 }
 div {
     position: absolute; 
@@ -34,7 +36,6 @@ button {
     height: 100%;
     display: block;
     font-size: 20vmin;
-    color: rgb(39, 39, 39);
 }
 #b7 {
     background-color: aqua;
@@ -45,6 +46,8 @@ button {
 .nextTurns {
     background-color: grey;
     width: 16.7%;
+    font-size: 20vmin;
+    text-align: center;
 }
 #turnCounter {
     width: auto;
